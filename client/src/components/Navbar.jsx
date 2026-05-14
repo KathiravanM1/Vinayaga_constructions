@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Phone, Mail, Menu, X } from "lucide-react";
+import logo from "../assets/Vinayaga_Constructions_logo.png";
 
 const navLinks = ["Home", "About Us", "Services", "Projects", "Contact Us"];
 
@@ -25,9 +26,12 @@ const Navbar = () => {
 
       <nav className="sticky top-0 z-50 border-b-2 border-foreground/5 bg-background/95 backdrop-blur">
         <div className="container flex h-20 items-center justify-between">
-          <a href="#" className="flex items-baseline gap-1.5">
-            <span className="font-display text-3xl font-bold italic copper-text">Vinayaga</span>
-            <span className="font-sans text-sm font-semibold uppercase tracking-[0.25em] text-foreground">Construction</span>
+          <a href="#" className="flex items-center gap-3">
+            <img src={logo} alt="Vinayaga Construction Logo" className="h-20 w-auto object-contain" />
+            <div className="flex items-baseline gap-1.5">
+              <span className="font-display text-3xl font-bold italic copper-text">Vinayaga</span>
+              <span className="font-sans text-sm font-semibold uppercase tracking-[0.25em] text-foreground">Construction</span>
+            </div>
           </a>
 
           <ul className="hidden items-center gap-10 md:flex">
@@ -35,20 +39,16 @@ const Navbar = () => {
               <li key={link}>
                 <a
                   href={`#${link.toLowerCase().replace(/\s/g, "-")}`}
-                  className="text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground transition-colors hover:text-foreground"
+                  className={`text-xs font-medium uppercase tracking-[0.2em] transition-colors ${
+                    link === "Contact Us"
+                      ? "copper-gradient px-5 py-2 text-white font-semibold hover:opacity-90"
+                      : "text-muted-foreground hover:text-foreground"
+                  }`}
                 >
                   {link}
                 </a>
               </li>
             ))}
-            <li>
-              <a
-                href="#contact-us"
-                className="copper-gradient px-6 py-2.5 text-xs font-semibold uppercase tracking-[0.15em] text-white transition-opacity hover:opacity-90"
-              >
-                Get a Quote
-              </a>
-            </li>
           </ul>
 
           <button className="md:hidden" onClick={() => setMobileOpen(!mobileOpen)} aria-label="Toggle menu">
@@ -63,18 +63,17 @@ const Navbar = () => {
                 <li key={link}>
                   <a
                     href={`#${link.toLowerCase().replace(/\s/g, "-")}`}
-                    className="text-xs font-medium uppercase tracking-[0.2em]"
+                    className={`text-xs font-medium uppercase tracking-[0.2em] ${
+                      link === "Contact Us"
+                        ? "copper-gradient inline-block px-5 py-2 text-white font-semibold"
+                        : ""
+                    }`}
                     onClick={() => setMobileOpen(false)}
                   >
                     {link}
                   </a>
                 </li>
               ))}
-              <li>
-                <a href="#contact-us" className="copper-gradient inline-block px-6 py-2.5 text-xs font-semibold uppercase tracking-[0.15em] text-white">
-                  Get a Quote
-                </a>
-              </li>
             </ul>
           </div>
         )}

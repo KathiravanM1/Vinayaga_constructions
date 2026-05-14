@@ -14,8 +14,8 @@ const HeroSection = () => {
       <div className="relative z-10 container">
         <div className="max-w-3xl">
           <div className="editorial-line mb-8" />
-          <div className="mb-6 inline-block border-2 copper-border bg-white/10 px-4 py-2 backdrop-blur">
-            <p className="text-xs font-bold uppercase tracking-[0.3em] copper-text">✓ Free Consultation for Estimation</p>
+          <div className="mb-8 inline-block border-2 copper-border bg-white/15 px-6 py-3 backdrop-blur">
+            <p className="text-sm font-bold uppercase tracking-[0.3em] copper-text">✓ Free Consultation for Estimation</p>
           </div>
           <p className="mb-4 text-xs font-medium uppercase tracking-[0.4em] text-white/50">
             Professional Construction Services

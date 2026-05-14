@@ -3,6 +3,7 @@ import HeroSection from "./components/HeroSection";
 import FeatureCards from "./components/FeatureCards";
 import AboutSection from "./components/AboutSection";
 import ServicesSection from "./components/ServicesSection";
+import ProjectsSection from "./components/ProjectsSection";
 import WhyUsSection from "./components/WhyUsSection";
 import InnovationsSection from "./components/InnovationsSection";
 import CTASection from "./components/CTASection";
@@ -16,6 +17,7 @@ function App() {
       <FeatureCards />
       <AboutSection />
       <ServicesSection />
+      <ProjectsSection />
       <WhyUsSection />
       <InnovationsSection />
       <CTASection />
