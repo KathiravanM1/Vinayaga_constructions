@@ -21,3 +21,20 @@ MongoDB connected: ac-hcskzdl-shard-00-02.ylqcobm.mongodb.net
 ◇ injected env (5) from .env // tip: ⌁ auth for agents [www.vestauth.com]
 Server running on port 5000
 MongoDB connected: ac-hcskzdl-shard-00-00.ylqcobm.mongodb.net
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+◇ injected env (5) from .env // tip: ◈ secrets for agents [www.dotenvx.com]
+Server running on port 5000
+MongoDB connected: ac-hcskzdl-shard-00-00.ylqcobm.mongodb.net
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+◇ injected env (5) from .env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+Server running on port 5000
+MongoDB connected: ac-hcskzdl-shard-00-00.ylqcobm.mongodb.net
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+◇ injected env (4) from .env // tip: ◈ secrets for agents [www.dotenvx.com]
+Server running on port 5000
+MongoDB connected: ac-hcskzdl-shard-00-00.ylqcobm.mongodb.net
