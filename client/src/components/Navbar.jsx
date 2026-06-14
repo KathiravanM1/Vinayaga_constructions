@@ -25,12 +25,12 @@ const Navbar = () => {
       </div>
 
       <nav className="sticky top-0 z-50 border-b-2 border-foreground/5 bg-background/95 backdrop-blur">
-        <div className="container flex h-20 items-center justify-between">
-          <a href="#" className="flex items-center gap-3">
-            <img src={logo} alt="Vinayaga Construction Logo" className="h-20 w-auto object-contain" />
-            <div className="flex items-baseline gap-1.5">
-              <span className="font-display text-3xl font-bold italic copper-text">Vinayaga</span>
-              <span className="font-sans text-sm font-semibold uppercase tracking-[0.25em] text-foreground">Construction</span>
+        <div className="container flex h-16 md:h-20 items-center justify-between px-4 md:px-8">
+          <a href="#" className="flex items-center gap-2 md:gap-3">
+            <img src={logo} alt="Vinayaga Construction Logo" className="h-12 md:h-20 w-auto object-contain" />
+            <div className="flex items-baseline gap-1">
+              <span className="font-display text-xl md:text-3xl font-bold italic copper-text">Vinayaga</span>
+              <span className="hidden sm:inline font-sans text-xs md:text-sm font-semibold uppercase tracking-[0.2em] md:tracking-[0.25em] text-foreground">Construction</span>
             </div>
           </a>
 

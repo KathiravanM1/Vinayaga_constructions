@@ -83,32 +83,32 @@ const ProjectCard = ({ project, index }) => {
 
         {/* LEFT — full slideshow of all images */}
         {allImages.length > 0 && (
-          <div className="md:w-3/5 h-[420px] md:h-[480px]">
+          <div className="w-full md:w-3/5 h-[260px] sm:h-[340px] md:h-[480px]">
             <Slideshow images={allImages} />
           </div>
         )}
 
         {/* RIGHT — project details */}
-        <div className="md:w-2/5 flex flex-col justify-center p-8 md:p-10 border-t md:border-t-0 md:border-l border-foreground/5">
-          <span className="font-display text-7xl font-light italic copper-text opacity-10 leading-none mb-4">
+        <div className="w-full md:w-2/5 flex flex-col justify-center p-6 sm:p-8 md:p-10 border-t md:border-t-0 md:border-l border-foreground/5">
+          <span className="font-display text-5xl md:text-7xl font-light italic copper-text opacity-10 leading-none mb-3 md:mb-4">
             {String(index + 1).padStart(2, "0")}
           </span>
 
-          <span className="text-xs font-medium uppercase tracking-[0.25em] copper-text mb-3">
+          <span className="text-xs font-medium uppercase tracking-[0.25em] copper-text mb-2 md:mb-3">
             {categoryLabel[project.category] ?? project.category}
           </span>
 
-          <h3 className="font-display text-2xl md:text-3xl font-semibold italic leading-tight">
+          <h3 className="font-display text-xl sm:text-2xl md:text-3xl font-semibold italic leading-tight">
             {project.title}
           </h3>
 
           {project.description && (
-            <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+            <p className="mt-3 md:mt-4 text-sm leading-relaxed text-muted-foreground">
               {project.description}
             </p>
           )}
 
-          <div className="mt-6 space-y-2.5">
+          <div className="mt-5 md:mt-6 space-y-2.5">
             {project.location && (
               <div className="flex items-center gap-2.5 text-xs text-muted-foreground">
                 <span className="w-1.5 h-1.5 flex-shrink-0 rounded-full bg-copper" />
@@ -130,7 +130,7 @@ const ProjectCard = ({ project, index }) => {
           </div>
 
           {project.featured && (
-            <span className="mt-6 inline-block border copper-border copper-text text-xs uppercase tracking-widest px-3 py-1 w-fit">
+            <span className="mt-5 md:mt-6 inline-block border copper-border copper-text text-xs uppercase tracking-widest px-3 py-1 w-fit">
               Featured
             </span>
           )}
@@ -199,8 +199,8 @@ const ProjectsSection = () => {
           <div className="space-y-px bg-foreground/5">
             {[...Array(3)].map((_, i) => (
               <div key={i} className="bg-card flex flex-col md:flex-row animate-pulse">
-                <div className="md:w-3/5 h-[420px] bg-muted" />
-                <div className="md:w-2/5 p-10 space-y-4">
+                <div className="w-full md:w-3/5 h-[260px] sm:h-[340px] md:h-[420px] bg-muted" />
+                <div className="md:w-2/5 p-6 md:p-10 space-y-4">
                   <div className="h-12 w-16 bg-muted" />
                   <div className="h-3 w-24 bg-muted" />
                   <div className="h-7 w-3/4 bg-muted" />

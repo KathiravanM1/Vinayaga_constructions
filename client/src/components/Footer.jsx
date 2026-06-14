@@ -5,18 +5,18 @@ const Footer = () => {
   const { services } = useServices();
 
   return (
-    <footer className="section-dark section-padding pb-8 pt-16">
-      <div className="container">
-        <div className="grid gap-12 md:grid-cols-3">
-          <div>
+    <footer className="section-dark section-padding pb-8 pt-12 md:pt-16">
+      <div className="container px-5 md:px-8">
+        <div className="grid gap-10 md:gap-12 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+          <div className="sm:col-span-2 md:col-span-1">
             <div className="flex items-center gap-3">
-              <img src={logo} alt="Vinayaga Construction Logo" className="h-20 w-auto object-contain" />
+              <img src={logo} alt="Vinayaga Construction Logo" className="h-16 md:h-20 w-auto object-contain" />
               <div className="flex items-baseline gap-1.5">
-                <span className="font-display text-3xl font-bold italic copper-text">Vinayaga</span>
+                <span className="font-display text-2xl md:text-3xl font-bold italic copper-text">Vinayaga</span>
                 <span className="text-xs font-semibold uppercase tracking-[0.25em] text-section-dark-foreground">Construction</span>
               </div>
             </div>
-            <p className="mt-6 text-sm leading-[1.8] text-muted-foreground">
+            <p className="mt-5 md:mt-6 text-sm leading-[1.8] text-muted-foreground">
               Professional construction services delivering quality craftsmanship and comprehensive solutions for residential and commercial projects.
             </p>
           </div>
