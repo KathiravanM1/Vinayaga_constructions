@@ -38,3 +38,35 @@ MongoDB connected: ac-hcskzdl-shard-00-00.ylqcobm.mongodb.net
 ◇ injected env (4) from .env // tip: ◈ secrets for agents [www.dotenvx.com]
 Server running on port 5000
 MongoDB connected: ac-hcskzdl-shard-00-00.ylqcobm.mongodb.net
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+◇ injected env (4) from .env // tip: ◈ secrets for agents [www.dotenvx.com]
+Server running on port 5000
+MongoDB connected: ac-hcskzdl-shard-00-02.ylqcobm.mongodb.net
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+◇ injected env (4) from .env // tip: ◈ secrets for agents [www.dotenvx.com]
+Server running on port 5000
+MongoDB connected: ac-hcskzdl-shard-00-02.ylqcobm.mongodb.net
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+◇ injected env (4) from .env // tip: ⌘ suppress logs { quiet: true }
+Server running on port 5000
+[32m[nodemon] starting `node server.js`[39m
+◇ injected env (4) from .env // tip: ◈ encrypted .env [www.dotenvx.com]
+Server running on port 5000
+MongoDB connected: ac-hcskzdl-shard-00-00.ylqcobm.mongodb.net
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+◇ injected env (4) from .env // tip: ⌘ suppress logs { quiet: true }
+Server running on port 5000
+MongoDB connected: ac-hcskzdl-shard-00-01.ylqcobm.mongodb.net
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+◇ injected env (4) from .env // tip: ◈ secrets for agents [www.dotenvx.com]
+Server running on port 5000
+MongoDB connected: ac-hcskzdl-shard-00-00.ylqcobm.mongodb.net
