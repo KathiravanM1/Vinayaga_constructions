@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Phone, Mail, Menu, X } from "lucide-react";
-import logo from "../assets/Vinayaga_Constructions_logo.png";
+const logo = "https://ik.imagekit.io/gefw7u8jk/Vinayaga%20constructions/Vinayaga_contructions_logo.jpeg";
 
 const navLinks = ["Home", "About Us", "Services", "Projects", "Contact Us"];
 

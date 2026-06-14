@@ -1,4 +1,4 @@
-import logo from "../assets/Vinayaga_Constructions_logo.png";
+const logo = "https://ik.imagekit.io/gefw7u8jk/Vinayaga%20constructions/Vinayaga_contructions_logo.jpeg";
 import { useServices } from "../hooks/useServices";
 
 const Footer = () => {
