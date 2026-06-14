@@ -30,7 +30,7 @@ const Navbar = () => {
             <img src={logo} alt="Vinayaga Construction Logo" className="h-12 md:h-20 w-auto object-contain" />
             <div className="flex items-baseline gap-1">
               <span className="font-display text-xl md:text-3xl font-bold italic copper-text">Vinayaga</span>
-              <span className="hidden sm:inline font-sans text-xs md:text-sm font-semibold uppercase tracking-[0.2em] md:tracking-[0.25em] text-white/80">Construction</span>
+              <span className="font-sans text-[10px] md:text-sm font-semibold uppercase tracking-[0.15em] md:tracking-[0.25em] text-white/80">Construction</span>
             </div>
           </a>
 
