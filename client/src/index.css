@@ -55,3 +55,27 @@
     background: hsl(var(--copper));
   }
 }
+
+@keyframes whatsapp-jitter {
+  0%, 60%, 100% { transform: rotate(0deg) scale(1); }
+  65%           { transform: rotate(-12deg) scale(1.1); }
+  70%           { transform: rotate(10deg) scale(1.1); }
+  75%           { transform: rotate(-8deg) scale(1.05); }
+  80%           { transform: rotate(6deg) scale(1.05); }
+  85%           { transform: rotate(-4deg) scale(1); }
+}
+
+@keyframes whatsapp-pulse {
+  0%   { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
+  70%  { box-shadow: 0 0 0 16px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+.whatsapp-float {
+  animation: whatsapp-jitter 3s ease-in-out infinite;
+}
+
+.whatsapp-pulse {
+  border-radius: 50%;
+  animation: whatsapp-pulse 2s ease-out infinite;
+}
