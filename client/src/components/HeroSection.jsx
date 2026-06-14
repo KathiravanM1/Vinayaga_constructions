@@ -2,7 +2,7 @@ const heroImg = "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=160
 
 const HeroSection = () => {
   return (
-    <section id="home" className="relative flex min-h-[100svh] items-end overflow-hidden pb-16 md:pb-24">
+    <section id="home" className="relative flex min-h-[100svh] flex-col overflow-hidden">
       <img
         src={heroImg}
         alt="Modern residential construction by Vinayaga Construction"
@@ -11,12 +11,12 @@ const HeroSection = () => {
       <div className="absolute inset-0" style={{ background: "hsl(210 30% 6% / 0.8)" }} />
       <div className="absolute inset-0 bg-gradient-to-t from-[hsl(210,30%,6%)] via-transparent to-transparent" />
 
-      <div className="relative z-10 container px-5 md:px-8">
+      <div className="relative z-10 container px-5 md:px-8 pt-6 pb-16 md:pt-16 md:pb-24 flex flex-col justify-center flex-1">
         <div className="max-w-3xl">
-          <div className="editorial-line mb-6 md:mb-8" />
-          <div className="mb-6 md:mb-8 inline-block border-2 copper-border bg-white/15 px-4 py-2 md:px-6 md:py-3 backdrop-blur">
+          <div className="mb-4 inline-block border-2 copper-border bg-white/15 px-4 py-2 md:px-6 md:py-3 backdrop-blur">
             <p className="text-xs md:text-sm font-bold uppercase tracking-[0.2em] md:tracking-[0.3em] copper-text">✓ Free Consultation for Estimation</p>
           </div>
+          <div className="editorial-line mb-4 md:mb-6 mt-4" />
           <p className="mb-3 text-[10px] md:text-xs font-medium uppercase tracking-[0.3em] md:tracking-[0.4em] text-white/50">
             Professional Construction Services
           </p>
